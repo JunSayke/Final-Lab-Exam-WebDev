@@ -14,7 +14,7 @@
 </head>
  
 <body class="d-flex justify-content-center align-items-center m-5">
-    <main class="container d-flex border border-black p-2 gap-2 rounded">
+    <main class="d-flex border border-black p-2 gap-2 rounded">
         <div class="border p-2" id="left-side">
             <button class="btn btn-primary" id="add-random-task">ADD RANDOM TASK</button>
             <h4 class="my-5">Task Queue</h1>
@@ -24,7 +24,7 @@
                 <button class="btn btn-primary" id="admit-task">ADMIT TASK</button>
         </div>
         <div class="container d-flex flex-column p-0 gap-2" id="right-side">
-            <div class="border border-danger p-2">
+            <div class="border border-danger p-2 queue-box">
                 <h5>High Priority Queue 1</h5>
                 <p>Queue List:</p>
                 <div class="container d-flex flex-wrap p-0 gap-2 my-2" id="queue1-list">
@@ -33,7 +33,7 @@
                 <p>Duration:</p>
                 <div class="border border-danger queue-bar" id="queue1-bar"></div>
             </div>
-            <div class="border border-black p-2">
+            <div class="border border-black p-2 queue-box">
                 <h5>Regular Queue 2</h5>
                 <p>Queue List:</p>
                 <div class="container d-flex flex-wrap p-0 gap-2 my-2" id="queue2-list">
@@ -41,7 +41,7 @@
                 <p>Duration:</p>
                 <div class="border border-danger queue-bar" id="queue2-bar"></div>
             </div>
-            <div class="border border-black p-2">
+            <div class="border border-black p-2 queue-box">
                 <h5>Regular Queue 3</h5>
                 <p>Queue List:</p>
                 <div class="container d-flex flex-wrap p-0 gap-2 my-2" id="queue3-list">
@@ -49,7 +49,7 @@
                 <p>Duration:</p>
                 <div class="border border-danger queue-bar" id="queue3-bar"></div>
             </div>
-            <div class="border border-black p-2">
+            <div class="border border-black p-2 queue-box">
                 <h5>Regular Queue 4</h5>
                 <p>Queue List:</p>
                 <div class="container d-flex flex-wrap p-0 gap-2 my-2" id="queue4-list">

@@ -5,15 +5,17 @@
 }
 
 body {
-	min-width: 500px;
-	min-height: 500px;
+	min-width: max-content;
+	min-height: max-content;
 }
 
 #left-side {
-	width: 1000px;
+	min-width: 300px;
+	width: 600px;
 }
 
 #right-side {
+	min-width: 300px;
 	width: 400px;
 }
 
@@ -31,4 +33,9 @@ body {
 	border: 1px solid red;
 	color: red;
 	padding: 5px;
+}
+
+.queue-box {
+	min-width: 300px;
+	min-height: 300px;
 }
