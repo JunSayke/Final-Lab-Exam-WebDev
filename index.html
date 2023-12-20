@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+ 
+<body class="d-flex justify-content-center align-items-center m-5">
+    <main class="d-flex border border-black p-2 gap-2 rounded">
+        <div class="border p-2" id="left-side">
+            <button class="btn btn-primary" id="add-random-task">ADD RANDOM TASK</button>
+            <h4 class="my-5">Task Queue</h1>
+                <div class="container-fluid d-flex flex-wrap p-0 my-2 gap-2" id="task-queue">
+ 
+                </div>
+                <button class="btn btn-primary" id="admit-task">ADMIT TASK</button>
+        </div>
+        <div class="container d-flex flex-column p-0 gap-2" id="right-side">
+            <div class="border border-danger p-2">
+                <h5>High Priority Queue 1</h5>
+                <p>Queue List:</p>
+                <div class="container d-flex flex-wrap p-0 gap-2 my-2" id="queue1-list">
+ 
+                </div>
+                <p>Duration:</p>
+                <div class="border border-danger queue-bar" id="queue1-bar"></div>
+            </div>
+            <div class="border border-black p-2">
+                <h5>Regular Queue 2</h5>
+                <p>Queue List:</p>
+                <div class="container d-flex flex-wrap p-0 gap-2 my-2" id="queue2-list">
+                </div>
+                <p>Duration:</p>
+                <div class="border border-danger queue-bar" id="queue2-bar"></div>
+            </div>
+            <div class="border border-black p-2">
+                <h5>Regular Queue 3</h5>
+                <p>Queue List:</p>
+                <div class="container d-flex flex-wrap p-0 gap-2 my-2" id="queue3-list">
+                </div>
+                <p>Duration:</p>
+                <div class="border border-danger queue-bar" id="queue3-bar"></div>
+            </div>
+            <div class="border border-black p-2">
+                <h5>Regular Queue 4</h5>
+                <p>Queue List:</p>
+                <div class="container d-flex flex-wrap p-0 gap-2 my-2" id="queue4-list">
+                </div>
+                <p>Duration:</p>
+                <div class="border border-danger queue-bar" id="queue4-bar"></div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+ 
+</html>
