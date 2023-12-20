@@ -26,7 +26,7 @@ $(document).ready(() => {
 
 	$("#admit-task").click(() => {
 		const admitTaskElem = $("#task-queue")
-		const firstTaskElem = admitTaskElem.find(":first-child")
+		const firstTaskElem = admitTaskElem.find(":first")
 
 		if (firstTaskElem && tasks.length != 0) {
 			const balance_threshold = Math.min(...queues.map((queue) => queue.length))
@@ -52,7 +52,7 @@ setInterval(() => {
 		const width = $(queueBars[i]).width()
 		if (width > startingBarWidth) {
 			if (width == startingBarWidth + 1) {
-				$(queueLists[i]).children(".task:first").remove()
+				$(queueLists[i]).find(":first").remove()
 			}
 			$(queueBars[i]).width(width - 1)
 		} else if (queues[i].length != 0) {

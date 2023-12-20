@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+body {
+	min-width: 500px;
+	min-height: 500px;
+}
+
 #left-side {
 	width: 1000px;
 }
