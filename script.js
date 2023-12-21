@@ -49,14 +49,14 @@ $(document).ready(() => {
 
 setInterval(() => {
 	for (let i = 0; i < queueBars.length; i++) {
-		const width = $(queueBars[i]).width()
+		const width = $(queueBars[i]).outerWidth()
 		if (width > startingBarWidth) {
 			if (width == startingBarWidth + 1) {
 				$(queueLists[i]).find(":first").remove()
 			}
-			$(queueBars[i]).width(width - 1)
+			$(queueBars[i]).outerWidth(width - 1)
 		} else if (queues[i].length != 0) {
-			$(queueBars[i]).width(width + queues[i].shift())
+			$(queueBars[i]).outerWidth(width + queues[i].shift())
 		}
 	}
 }, 20)
